@@ -15,7 +15,7 @@ while(True):
         print(x,y,w,h)
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = frame[y:y+h, x:x+h]
-        img_item = "my-image.png"
+        img_item = "facerecognition/my-image.png"
         cv2.imwrite(img_item, roi_gray)
 
         color = (196, 31, 255)
