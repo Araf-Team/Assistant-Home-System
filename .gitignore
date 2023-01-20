@@ -131,3 +131,6 @@ dmypy.json
 # Private files
 my-image.png
 face-recognition/train-images
+
+# Visual Studio Code directories
+.vscode
