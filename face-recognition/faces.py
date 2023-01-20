@@ -27,8 +27,17 @@ while(True):
         conf = 100 - float(conf)
         print(conf)
         if conf > 50:
+            name = labels[id_]
+
             print(id_)
-            print(labels[id_])
+            print(name)
+
+            font = cv2.FONT_HERSHEY_COMPLEX
+            color = (255, 255, 255)
+            stroke = 2
+
+            cv2.putText(frame, name, (x,y-10), font, 1, color, stroke, cv2.LINE_AA)
+
 
         img_item = "face-recognition/my-image.png"
         cv2.imwrite(img_item, roi_gray)
