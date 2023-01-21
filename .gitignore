@@ -134,3 +134,6 @@ face_recognition/train-images
 
 # Visual Studio Code directories
 .vscode
+
+# Firmata
+StandardFirmata.ino
