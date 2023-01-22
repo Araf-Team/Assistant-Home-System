@@ -14,6 +14,8 @@ board.digital[10].mode = pyfirmata.INPUT
 board.digital[12].mode = pyfirmata.OUTPUT
 board.digital[13].mode = pyfirmata.OUTPUT
 
+print("System online")
+
 while True:
     sw = board.digital[10].read()
     if sw is True:
